@@ -15,7 +15,7 @@ load_dotenv()
 
 # Configure the Gemini API
 GOOGLE_API_KEY = os.getenv("GEMINI_API_KEY")
-genai.configure(api_key=GOOGLE_API_KEY)
+genai.configure(api_key="AIzaSyCKB1493rWdWRKz2z1eEO6b1V9Q3DJarrM")
 
 def clean_generated_code(code: str) -> str:
     # Remove any markdown code block markers

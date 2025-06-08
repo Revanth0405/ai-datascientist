@@ -43,7 +43,7 @@ if uploaded_file:
     st.subheader("🤖 GPT-Generated Code")
     with st.expander("3️⃣ GPT-Powered Dynamic Code Generation"):
         if st.button("Generate with GPT"):
-            gpt_code = generate_code_with_gpt("Generate EDA code", df_clean)
+            gpt_code = generate_code_with_gpt("Generate EDA code", df_clean, file_path)
     
             if gpt_code:
                 st.code(gpt_code, language="python")
